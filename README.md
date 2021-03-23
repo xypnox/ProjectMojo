@@ -6,6 +6,7 @@
 
 - [ProjectMojo](#projectmojo)
   - [Table of contents:](#table-of-contents)
+  - [Guides](#guides)
 - [Features](#features)
   - [Custom Templates](#custom-templates)
   - [Customization](#customization)
@@ -29,6 +30,14 @@ Project Mojo does one thing: It generates bulk media from SVG files.
 You can upload any template that you desire, or use any of the pre-existing ones. Choose the variables that need to be substituted, tweak the colors, fonts, and the images and generate batch media with CSVs.
 
 The lack of code involved makes it simple for anyone to generate high quality bulk media easily. Also, the availability of API keys in the form of JWT means that it can be integrated in complex workflows where automation is the norm. From uploading the templates to rendering the images, all can be achieved via the API as well.
+
+## Guides
+
+You can checkout these videos for a demo of the application:
+
+- [ProjectMojo - Upload a Template](https://www.youtube.com/watch?v=q4dVv2-3XfM)
+- [ProjectMojo - Generate a Post for Instagram](https://www.youtube.com/watch?v=NZgB4r5batc)
+- [ProjectMojo - Generate Multiple Certificates from CSV](https://www.youtube.com/watch?v=tQ8OsDh_534)
 
 # Features
 
