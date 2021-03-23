@@ -1,0 +1,34 @@
+@import "variables";
+@import "responsive";
+@import "typography";
+@import "mixins";
+
+@import "water";
+
+@import "navbar";
+@import "footer";
+@import "gallery";
+@import "template_row";
+@import "render_template";
+@import "create_template";
+@import "editor";
+@import "generic";
+@import "modal";
+
+@import "dashboard";
+@import "auth_forms";
+@import "user_page";
+@import "customization";
+
+body {
+  max-width: 80%;
+  margin: auto;
+
+  @include sm {
+    max-width: 90%;
+  }
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,46 @@
+.ReactModalPortal {
+  .ReactModal__Overlay.ReactModal__Overlay--after-open {
+    z-index: 100;
+    // background-color: rgba($color: #000000, $alpha: 0.75) !important;
+  }
+
+  .ReactModal__Content.ReactModal__Content--after-open {
+    padding: 2rem !important;
+    display: flex;
+    flex-direction: column;
+    .close_action {
+      background: none;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: -1rem;
+      margin-right: -2rem;
+      margin-bottom: -2rem;
+      button {
+        background: none;
+      }
+    }
+
+    .info {
+      margin: 1rem 0;
+      font-size: 1.25rem;
+
+      h1 {
+        margin-bottom: 0rem;
+      }
+
+      p {
+        margin-bottom: 3rem;
+      }
+
+      button {
+        background-color: $pink;
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        svg {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}

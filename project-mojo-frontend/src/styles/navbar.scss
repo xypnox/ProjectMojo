@@ -1,0 +1,149 @@
+nav {
+  display: flex;
+  font-size: 2rem;
+  background: var(--background-alt);
+  border: 1px solid var(--background);
+  margin: 2rem 0 5rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+
+  #project-name {
+    font-weight: bolder;
+    margin: 0.5rem 0rem;
+    display: flex;
+    align-items: center;
+    color: $green;
+    font-family: "Spartan", sans-serif;
+    font-weight: 700;
+    img {
+      margin-right: 1rem;
+    }
+  }
+  ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    li {
+      display: flex;
+      a {
+        padding: 1rem 1.25rem;
+        margin: 0 0.25rem;
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: var(--text-main);
+        border-radius: 1rem;
+        transition: 0.2s background ease-in-out;
+        &:hover {
+          background: var(--background);
+        }
+        &.active {
+          color: var(--background-alt);
+          background: var(--links);
+        }
+      }
+    }
+    .user_widget {
+      display: flex;
+      align-items: center;
+
+      cursor: pointer;
+
+      .button {
+        font-size: 1.25rem;
+        padding: 1rem 1.25rem;
+        margin: 0 0.25rem;
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: var(--text-main);
+        border-radius: 1rem;
+        background: none;
+        &:hover {
+          background: var(--background);
+        }
+        &.active {
+          color: var(--background-alt);
+          background: var(--links);
+        }
+      }
+      a {
+        display: flex;
+        align-items: center;
+        img {
+          border-radius: 50%;
+          margin-left: 1rem;
+          transition: 0.2s ease-in-out all;
+          &:hover {
+            transform: scale(1.1);
+          }
+          &:active {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+
+  .toogle {
+    display: none;
+  }
+
+  @include md_sm {
+    justify-content: space-between;
+    align-items: center;
+
+    @include sm {
+      padding: 1rem;
+    }
+
+    #project-name {
+      font-size: 1.2rem;
+      font-weight: bolder;
+      margin: 0rem 0rem;
+      img {
+        height: 3rem;
+        width: 3rem;
+        margin-right: 1rem;
+      }
+    }
+
+    transition: all 0.2s ease-in-out;
+
+    &.closed {
+      ul {
+        display: none;
+      }
+    }
+    &.open {
+      // display: flex;
+      flex-wrap: wrap;
+      ul {
+        width: 100%;
+        display: inherit;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+        padding: 0 1rem 0 0;
+        li {
+          a {
+            // font-size: 1rem;
+          }
+        }
+        .user_widget {
+          width: 100%;
+          justify-content: space-between;
+        }
+      }
+    }
+    .toogle {
+      display: inherit;
+      color: $primary;
+      svg {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+  }
+}

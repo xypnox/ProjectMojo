@@ -1,0 +1,73 @@
+.dashboard {
+  .title {
+    font-size: 3rem;
+  }
+  .recent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      width: 15rem;
+      height: 20rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: var(--text-main);
+      margin-left: 5rem;
+      flex-shrink: 0;
+      &.upload {
+        flex-direction: column;
+        @include surface;
+
+        border: 1px dashed $primary;
+        background: repeating-linear-gradient(
+          45deg,
+          var(--background-body),
+          var(--background-body) 10px,
+          var(--background-alt) 10px,
+          var(--background-alt) 20px
+        );
+
+        svg {
+          color: var(--background);
+          margin-bottom: 2rem;
+        }
+
+        &:hover {
+          svg {
+            color: $primary;
+            -webkit-filter: drop-shadow(0px 0px 4px $primary);
+            filter: drop-shadow(0px 0px 4px $primary);
+          }
+        }
+      }
+    }
+    .trow {
+      width: calc(100% - 21rem);
+      .template_row {
+        margin: 0rem;
+      }
+      .array {
+        .template {
+          height: 20rem;
+          margin: 0rem 1rem;
+        }
+      }
+    }
+  }
+
+  @include md_sm {
+    .title {
+      font-size: 1.5rem;
+    }
+    .recent,
+    .recent_title {
+      display: none;
+    }
+    .trow {
+      display: none;
+    }
+  }
+}

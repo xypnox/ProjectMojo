@@ -1,0 +1,67 @@
+.customization {
+  // @include surface;
+  // padding: 1rem;
+  margin-bottom: -1rem;
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+  .colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    input[type="color"] {
+      display: inline-block;
+    }
+  }
+
+  .images {
+    display: block;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .input-file {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin: 0.5rem 0;
+    }
+    h2 {
+      display: inline-block;
+      margin-right: 2rem;
+    }
+    button {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      border: 1px dashed $primary;
+      background: repeating-linear-gradient(
+        45deg,
+        var(--background-body),
+        var(--background-body) 10px,
+        var(--background-alt) 10px,
+        var(--background-alt) 20px
+      );
+      svg {
+        margin-right: 1rem;
+      }
+    }
+
+    input[type="file"] {
+      position: absolute;
+      display: block;
+      top: 0;
+      height: 100%;
+      opacity: 0;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}

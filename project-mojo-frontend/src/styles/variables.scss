@@ -1,0 +1,33 @@
+$green: #5acab9;
+$yellow: #f8cc48;
+$pink: #ea4484;
+$charcoal: #6a6774;
+
+$primary: $green;
+
+$gray: $charcoal;
+$background: #1c1a22;
+$background-light: #2e2b38;
+$background-lighter: #3a3646;
+
+:root {
+  --background-body: #1c1a22;
+  --background: #3a3646;
+  --background-alt: #201e27;
+  --selection: #{$green};
+  --text-main: #dbdbdb;
+  --text-bright: #fff;
+  --text-muted: #88818b;
+  --links: #{$green};
+  --focus: #{$green};
+  --border: #3a3259;
+  --code: #ffbe85;
+  --animation-duration: 0.1s;
+  --button-hover: #3a3259;
+  --scrollbar-thumb: var(--button-hover);
+  --scrollbar-thumb-hover: color-mod(var(--scrollbar-thumb) lightness(+8%));
+  --form-placeholder: #a9a9a9;
+  --form-text: #fff;
+  --variable: #d941e2;
+  --highlight: #efdb43;
+}

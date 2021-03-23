@@ -1,0 +1,62 @@
+.create_template {
+  .upload_form {
+    width: max-content;
+    margin: 3rem auto;
+
+    @include surface;
+
+    padding: 2rem;
+
+    input[type="file"] {
+      padding: 1rem;
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+
+    .input {
+      margin: 2rem 0;
+      font-size: 1.25rem;
+    }
+    .select {
+      display: flex;
+      align-items: center;
+      font-size: 1.25rem;
+      span {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .hint {
+      color: var(--text-muted);
+    }
+
+    .primary {
+      margin-top: 2rem;
+
+      &:disabled {
+        background-color: $charcoal;
+        color: var(--text-bright);
+      }
+      span {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  @include md_sm {
+    .upload_form {
+      width: inherit;
+      padding: 1rem;
+
+      input[type="text"],
+      input[type="file"] {
+        width: calc(100% - 3rem);
+      }
+
+      input[type="file"] {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

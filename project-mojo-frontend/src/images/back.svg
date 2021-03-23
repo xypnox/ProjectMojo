@@ -1,0 +1,21 @@
+<svg width="102" height="102" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 1V101" stroke="#221F28"/>
+<path d="M21 1V101" stroke="#221F28"/>
+<path d="M31 1V101" stroke="#221F28"/>
+<path d="M41 1V101" stroke="#221F28"/>
+<path d="M61 1V101" stroke="#221F28"/>
+<path d="M71 1V101" stroke="#221F28"/>
+<path d="M81 1V101" stroke="#221F28"/>
+<path d="M91 1V101" stroke="#221F28"/>
+<path d="M1 91H101" stroke="#221F28"/>
+<path d="M1 81H101" stroke="#221F28"/>
+<path d="M1 71H101" stroke="#221F28"/>
+<path d="M1 61L101 61" stroke="#221F28"/>
+<path d="M1 41L101 41" stroke="#221F28"/>
+<path d="M1 31L101 31" stroke="#221F28"/>
+<path d="M1 21L101 21" stroke="#221F28"/>
+<path d="M1 11L101 11" stroke="#221F28"/>
+<path d="M51 1V101" stroke="#222028" stroke-width="1.5"/>
+<path d="M1 51H101" stroke="#222028" stroke-width="1.5"/>
+<path d="M101 1H1V101H101V1Z" stroke="#222028" stroke-width="2"/>
+</svg>

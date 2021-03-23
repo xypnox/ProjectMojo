@@ -1,0 +1,170 @@
+.editor {
+  margin-bottom: 5rem;
+
+  .loader {
+    @include surface;
+    padding: 4rem 4rem 2rem;
+    font-size: 2rem;
+    // color: var(--text-muted);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    margin: auto;
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    svg {
+      color: $primary;
+      animation: spin 3.3s infinite linear;
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+  }
+
+  .preview {
+    margin-top: 3rem;
+  }
+
+  .title {
+    font-size: 3rem;
+    margin-bottom: 0rem;
+  }
+
+  .toolkit {
+    // flex-grow: 1;
+    margin: 2rem 3rem;
+    min-height: 30rem;
+    width: 27rem;
+    input[type="file"] {
+      margin: 2rem 0;
+      padding: 2rem;
+      font-size: 1.5rem;
+      max-width: calc(100% - 4rem);
+    }
+
+    .tablist {
+      list-style: none;
+      margin: 1rem 0;
+      padding: 0;
+      display: flex;
+      background-color: var(--background);
+      justify-content: space-around;
+      border-radius: 0.5rem;
+      .tab {
+        padding: 0.5rem 2rem;
+        border-bottom: 4px solid var(--background);
+        margin-right: 1rem;
+        cursor: pointer;
+        &.selected {
+          color: $primary;
+          border-color: $primary;
+        }
+      }
+    }
+
+    .tab-content {
+      display: none;
+      &.selected {
+        display: inherit;
+        @include surface;
+        padding: 1rem 2rem;
+      }
+    }
+
+    .alt_message {
+      color: var(--text-muted);
+      padding-top: 1rem;
+      margin-top: 2rem;
+      border-top: 2px solid var(--background);
+    }
+
+    form {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      .label {
+        font-size: 1.25rem;
+        margin: 0.5rem 0;
+        display: block;
+      }
+      input {
+        font-size: 1.5rem;
+        margin: 0 0 0.5rem;
+        padding: 0.5rem 1rem;
+      }
+    }
+    .tools {
+      margin: 2rem 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      // flex-direction: column;
+      // justify-content: space-between;
+    }
+    .button {
+      padding: 0.5rem 1.5rem;
+      margin: 0.5rem 1rem 1rem 0;
+      display: flex;
+      align-items: center;
+      font-size: 1.1rem;
+      width: max-content;
+      &:disabled {
+        background-color: $charcoal;
+        color: var(--text-bright);
+      }
+      span {
+        display: flex;
+        align-items: center;
+      }
+      svg {
+        margin-right: 0.75rem;
+      }
+    }
+  }
+
+  img {
+    max-width: 100%;
+    min-width: 10rem;
+    min-height: 10rem;
+    max-height: 80vh;
+    box-shadow: 0px 25px 50px rgba($color: #000000, $alpha: 0.25);
+    border-radius: 6px;
+  }
+
+  @include md_sm {
+    margin-top: -3rem;
+    .wrapper {
+      flex-direction: column;
+    }
+
+    .toolkit {
+      margin: 1rem 0;
+      width: 100%;
+      input[type="file"] {
+        margin: 1rem 0;
+        padding: 1rem;
+        font-size: 1rem;
+        max-width: calc(100% - 2rem);
+      }
+      .tab-content {
+        display: none;
+        &.selected {
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}

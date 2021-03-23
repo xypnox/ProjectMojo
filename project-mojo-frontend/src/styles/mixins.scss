@@ -1,0 +1,35 @@
+@mixin hover-grow($size: 20px) {
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05) translateY(-2.5%);
+    box-shadow: 0px ($size / 2) $size rgba(#000000, 0.5);
+  }
+
+  &:active {
+    transform: scale(1) translateY(0%);
+  }
+}
+
+@mixin surface {
+  background-color: var(--background-alt);
+  border: 1px solid var(--background);
+  border-radius: 1rem;
+
+  input,
+  textarea,
+  select {
+    background-color: var(--background-body);
+  }
+
+  button,
+  .button {
+    background-color: var(--background);
+  }
+
+  input[type="submit"],
+  .button.primary {
+    color: var(--background-body);
+    background-color: $primary;
+  }
+}

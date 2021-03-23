@@ -1,0 +1,30 @@
+$small_width_max: 600px;
+$medium_width_max: 900px;
+
+// Small devices
+@mixin sm {
+  @media (max-width: #{$small_width_max - 1px}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$small_width_max}) and (max-width: #{$medium_width_max - 1px}) {
+    @content;
+  }
+}
+
+// Medium and small devices
+@mixin md_sm {
+  @media (max-width: #{$medium_width_max - 1px}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$medium_width_max}) {
+    @content;
+  }
+}

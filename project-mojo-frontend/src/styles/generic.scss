@@ -1,0 +1,23 @@
+.auth-image {
+  min-width: 10rem;
+  min-height: 10rem;
+  background-color: var(--background);
+}
+
+input[type="submit"],
+.button.primary {
+  color: var(--background-body);
+  background-color: $primary;
+}
+
+input[type="file"] {
+  cursor: pointer;
+  border: 1px dashed $primary;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--background-body),
+    var(--background-body) 10px,
+    var(--background-alt) 10px,
+    var(--background-alt) 20px
+  );
+}

@@ -1,0 +1,8 @@
+CREATE TABLE users
+(id SERIAL UNIQUE,
+ name VARCHAR(100),
+ email VARCHAR(100) UNIQUE NOT NULL,
+ admin BOOLEAN,
+ last_login TIMESTAMP,
+ plan USER_PLAN,
+ password VARCHAR(300));
