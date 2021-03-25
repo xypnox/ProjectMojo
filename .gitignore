@@ -139,3 +139,7 @@ dmypy.json
 cython_debug/
 .lsp/*.db
 .calva/*
+
+# custom build scripts
+
+*xypnox.sh

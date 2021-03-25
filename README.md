@@ -2,6 +2,8 @@
 
 # ProjectMojo
 
+Try it out here: [:link: project-mojo-demo.herokuapp.com](http://project-mojo-demo.herokuapp.com/)
+
 ## Table of contents:
 
 - [ProjectMojo](#projectmojo)
@@ -155,6 +157,8 @@ Migrations can be ruin through:
 - Via repl through `(migrate)`
 
 Migrations can be created through repl by running `(create-migration "<migration name>")`. This will create 2 migrations files (up and down) in the `project-mojo-backend/resources/migrations` directory from where you can add the SQL statement run to do the changes and undo the changes. Note that only a single statement is allowed to keep the migrations atomic.
+
+Migrations on the deployed instance can be run by setting the DB url to the one set in the server and then running migrations on it.
 
 **Structure**
 
