@@ -33,6 +33,12 @@ You can upload any template that you desire, or use any of the pre-existing ones
 
 The lack of code involved makes it simple for anyone to generate high quality bulk media easily. Also, the availability of API keys in the form of JWT means that it can be integrated in complex workflows where automation is the norm. From uploading the templates to rendering the images, all can be achieved via the API as well.
 
+---
+
+This project was sponsored by [Harsh Gupta](https://www.linkedin.com/in/hargup/) and [Vaidehi Bharadwaj](https://www.linkedin.com/in/vaidehi-bharadwaj/)
+
+---
+
 ## Guides
 
 You can checkout these videos for a demo of the application:
